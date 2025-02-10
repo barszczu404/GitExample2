@@ -1,9 +1,14 @@
 package pl.kurs.models;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private String firstName;
     private String lastName;
     private double salary;
+
+    public Employee() {
+    }
 
     public Employee(String firstName, String lastName, double salary) {
         this.firstName = firstName;
